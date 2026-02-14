@@ -75,6 +75,28 @@
       50% { transform: scale(1); }
     }
 
+    .card-image {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 16px;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 20px rgba(255, 77, 109, 0.15);
+      object-fit: cover;
+      animation: imageZoom 0.8s ease-out;
+    }
+
+    @keyframes imageZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
     h1 {
       color: #ff4d6d;
       font-size: 2rem;
@@ -199,6 +221,7 @@
   <div class="celebration" id="celebration"></div>
 
   <div class="card">
+    <img src="3B9644F3-8164-42C8-93B1-ABC26B61569C_1_105_c.jpeg" alt="Valentine's Image" class="card-image">
     <div class="heart-icon">❤️</div>
     <h1>Will you be my Valentine?</h1>
     <p class="subtitle">Make a choice that matters</p>
